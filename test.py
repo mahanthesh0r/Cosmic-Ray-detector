@@ -1,0 +1,42 @@
+import numpy as np
+import cv2
+import time
+import copy
+from detect import hit_detection
+#cam = cv2.VideoCapture(0)
+#time.sleep(2)
+#ret,frame = cam.read()
+#data = np.array(frame)
+image = cv2.imread('-1.0294380187988281.png')
+hit_detection(image)
+
+#img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#print(image.shape)
+#pos = np.unravel_index(image.argmax(),image.shape)
+#xy_coordinate = (pos//image.shape[0], pos//image.shape[1])
+#bilateral = cv2.bilateralFilter(image, 3, 3, 3)
+#print(pos,np.max(bilateral),image.shape)
+#edges = cv2.Canny(image, 200, 250)
+#print(np.max(edges),edges.shape)
+#pos = np.unravel_index(edges.argmax(),edges.shape)
+#xy_coordinate = (pos//edges.shape[0], pos//edges.shape[1])
+#print(pos)
+#img_crop = image[466:486,626:646]
+#print(img_crop.shape)
+##print(np.max(edges))
+#print(np.max(image))
+#test_data = np.array(image[10:-10,10:-10])
+#print(test_data)
+#image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#bilateral = cv2.bilateralFilter(image, 3, 3, 3)
+#edges = cv2.Canny(bilateral, 20, 60)
+#contours = cv2.findContours(copy.deepcopy(edges), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+#print(contours)
+#t = np.array(grey)
+#ret,thresh4 = cv2.threshold(image,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+#print(ret)
+#cv2.imwrite("/home/pi/i/otsu.png",thresh4)
+print(np.max(image))
+#cv2.imshow('-1.0294380187988281.png',thresh4)
+#print(np.max(t))
+#cam.release()
